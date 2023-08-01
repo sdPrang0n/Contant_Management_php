@@ -41,8 +41,8 @@ CREATE TABLE `contacts` (
 -- Dumping data for table `contacts`
 --
 
-INSERT INTO `contacts` (`id`, `firstname`, `middlename`, `lastname`, `email`, `contacts`, `companyname`, `date`) VALUES
-(1, 'Ashish', 'N', 'sasatte', 'ashishsasatte@gmail.com', '9823871425', 'Asneh Tech', 123636363),
+INSERT INTO `contacts` (`id`, `firstname`, `middlename`, `lastname`, `email`, `contacts`) VALUES
+(1, 'Sukanta', 'Deb', 'Nath', 'sdp@gmail.com', '9823871425'),
 
 --
 -- Indexes for dumped tables
