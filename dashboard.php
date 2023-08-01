@@ -75,7 +75,6 @@ td, th {
 		$lname = $i['lastname'];
 		$email = $i['email'];
 		$phone = $i['contacts'];
-		$cname = $i['companyname'];
    ?>
   
   <tr>
@@ -84,7 +83,6 @@ td, th {
     <td><?php echo $lname; ?></td>
     <td><?php echo $email; ?></td>
     <td><?php echo $phone; ?></td>
-    <td><?php echo $cname; ?></td>
     <td style="font-size: 10px">
     	<span class="btn btn-primary btn-xs" data-toggle="modal" data-target="#edit<?php echo $id; ?>">EDIT</span>
     	<span class="btn btn-danger btn-xs delete" name="<?php echo $id; ?>">DELETE</span>
@@ -138,14 +136,6 @@ td, th {
 				<div class="col-sm-8">
 					<input type="text" value="<?php echo $phone; ?>" class="form-control" id="e-phonenumber<?php echo $id; ?>" placeholder="Enter Phone Number">
 					<div class="error" id="e_errphonenumber<?php echo $id; ?>"></div>
-				</div>
-			</div>
-			<br><br>
-			<div class="form-group">
-				<label class="control-label col-sm-4" for="companyname">Address:</label>
-				<div class="col-sm-8">
-					<input type="text" value="<?php echo $cname; ?>" class="form-control" id="e-companyname<?php echo $id; ?>" placeholder="Enter Address">
-					<div class="error" id="e_errcompanyname<?php echo $id; ?>"></div>
 				</div>
 			</div>
 			<br><br>
@@ -217,14 +207,6 @@ td, th {
 				<div class="col-sm-8">
 					<input type="text" class="form-control" id="phonenumber" placeholder="Enter Phone Number">
 					<div class="error" id="errphonenumber"></div>
-				</div>
-			</div>
-			<br><br>
-			<div class="form-group">
-				<label class="control-label col-sm-4" for="companyname">Address:</label>
-				<div class="col-sm-8">
-					<input type="text" class="form-control" id="companyname" placeholder="Enter Address">
-					<div class="error" id="errcompanyname"></div>
 				</div>
 			</div>
 			<br><br>
@@ -313,7 +295,6 @@ $(document).ready(function(){
 		var lastname = $("#lastname").val();
 		var email = $("#email").val();
 		var phonenumber = $("#phonenumber").val();
-		var companyname = $("#companyname").val();
 
 		var errfirstname = "";
 		var errmiddlename = "";
